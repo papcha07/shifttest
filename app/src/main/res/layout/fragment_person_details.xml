@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".presenter.PersonDetailsFragment">
+
+    <ImageView
+        android:id="@+id/person_thumbnail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/person_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Мария Смирнова" />
+
+    <TextView
+        android:id="@+id/person_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawablePadding="12dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:drawableStartCompat="@android:drawable/ic_menu_call"
+        tools:text="+7 (123) 456-78-90" />
+
+    <TextView
+        android:id="@+id/person_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawablePadding="12dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:drawableStartCompat="@android:drawable/ic_dialog_email"
+        tools:text="maria.smirnova@example.com" />
+
+    <TextView
+        android:id="@+id/person_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawablePadding="12dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:drawableStartCompat="@android:drawable/ic_dialog_map"
+        tools:text="123 ул. Примерная, г. Пример, Россия" />
+
+</LinearLayout>
