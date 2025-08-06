@@ -34,7 +34,8 @@ val dataModule = module {
             androidContext(),
             AppDatabase::class.java,
             "persons.db"
-        ).build()
+        ).fallbackToDestructiveMigration()
+            .build()
     }
 
     single {
